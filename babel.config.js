@@ -1,7 +1,7 @@
 module.exports = function(api) {
   api.cache(true);
   const web = ['scripts', 'start'].every( thing => process.argv[1].includes(thing))
-  const plugins = [ ["@babel/plugin-proposal-decorators", { decoratorsBeforeExport: true } ] ]
+  const plugins = [ ]
 
   if(!web) plugins.push([
     'babel-plugin-module-resolver',

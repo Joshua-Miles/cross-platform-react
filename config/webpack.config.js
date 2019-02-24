@@ -266,6 +266,7 @@ module.exports = function(webpackEnv) {
       alias: {
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
+        'react-router-native': 'react-router-dom',
         'react-native/Libraries/EventEmitter/NativeEventEmitter': 'react-native-web',
         'react-native': 'react-native-web',
       },
