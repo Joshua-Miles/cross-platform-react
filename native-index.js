@@ -2,6 +2,7 @@ import App from './src/App'
 import { registerRootComponent } from 'expo'
 import React from 'react'
 import * as Expo from 'expo'
+import { Provider } from './src/library'
 
 class FontProvider extends React.Component {
 
@@ -18,7 +19,7 @@ class FontProvider extends React.Component {
 
 
       render(){
-          return this.state.loaded ? <App /> : null
+          return this.state.loaded ? <Provider><App /></Provider> : null
       }
 
 }
